@@ -1,0 +1,4517 @@
+/*==========
+
+Template Name: FoodeCart - Restaurants & Food Template
+Template URI: 
+Description: 
+Author: 
+Author URI: 
+Version: 1.0
+
+==========*/
+
+
+/*==========
+----- CSS INDEX -----
+1.Common CSS
+2.Loader CSS
+3.Header CSS
+4.Banner CSS
+5.Book Restaurant Form CSS
+6.About Us CSS
+7.Our Story CSS
+8.Restaurant CSS
+9.Gift Store CSS
+10.Testimonial - What Our Clients Say CSS
+11.Blog - News & Events CSS
+12.Gallery - Stay Connected CSS
+13.Footer CSS
+14.About Us Page CSS
+    (a).Ianner Banner CSS
+    (b).Inner Page BreadCrumb CSS
+    (c).About Us CSS
+    (d).Our Chef Skills CSS
+    (e).Attached Gift Store CSS
+    (f).Attached Gallery - Stay Connected CSS
+    (g).Attached Footer CSS
+15.Gallery Page CSS
+    (a).Attached Ianner Banner CSS
+    (b).Gallery Page Slider CSS
+    (c).Attached Gift Store CSS
+    (d).Attached Footer CSS
+16.Offer Page CSS
+    (a).Attached Ianner Banner CSS
+    (b).Offer Section 1 CSS
+    (c).Offer Section 2 CSS
+    (d).Attached Gift Store CSS
+    (e).Attached Gallery - Stay Connected CSS
+    (f).Attached Footer CSS
+17.Team Page CSS
+    (a).Attached Ianner Banner CSS
+    (b).Our Team CSS
+    (c).Attached Gallery - Stay Connected CSS
+    (d).Attached Footer CSS
+18.Menu Page CSS
+    (a).Attached Ianner Banner CSS
+    (b).Menu List CSS
+    (c).Attached Gallery - Stay Connected CSS
+    (d).Attached Footer CSS
+19.Blog Page CSS
+	(a).Attached Ianner Banner CSS
+    (b).Blog Post CSS
+    (c).Attached Gallery - Stay Connected CSS
+    (d).Attached Footer CSS
+20.Blog Detail Page CSS
+    (a).Attached Ianner Banner CSS
+    (b).Blog Post Detail CSS
+    (c).Attached Gallery - Stay Connected CSS
+    (d).Attached Footer CSS
+21.Contact Page CSS
+    (a).Attached Ianner Banner CSS
+    (b).Contact Form CSS
+    (c).Attached Gallery - Stay Connected CSS
+    (d).Attached Footer CSS
+==========*/
+
+/*==========Common CSS Start==========*/
+body {
+	overflow-x: hidden !important;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+    outline: none;
+}
+
+input,
+input:focus,
+input:hover,
+button,
+button:hover,
+button:focus {
+    outline: none;
+}
+
+
+img {
+	width: 100%;
+}
+
+p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #777777;
+	margin-bottom: 12px;
+}
+
+.h1-title {
+	font-size: 60px;
+	color: #ffffff;
+	font-family: 'Playfair Display';
+    font-weight: bold;
+    text-transform: uppercase;
+	margin-bottom: 35px;
+    font-style: italic;
+}
+
+.h1-title span {
+    color: #c7ac71;
+    display: block;
+}
+
+.contact-title{
+    margin-left: 286px;
+    font-size: 25px;
+	color: #ffffff;
+	font-family: 'Playfair Display';
+    font-weight: bold;
+    text-transform: uppercase;
+	margin-bottom: 35px;
+    font-style: italic;
+}
+
+.contact-title span{
+    color: #c7ac71;
+    display: block;
+}
+
+.h2-title {
+	font-size: 55px;
+    line-height: 61px;
+    color: #3c3533;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.h2-title span {
+    position: relative;
+    display: inline-block;
+}
+
+.h2-title span:before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #c7ac71;
+    z-index: -1;
+}
+
+.h3-title {
+	font-size: 40px;
+    line-height: 50px;
+    color: #fefefe;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+}
+
+.h3-title span {
+    display: block;
+    color: #c7ac71;
+}
+
+.h3-title:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 50px;
+	height: 2px;
+	background: #c7ac71;
+}
+
+.h4-title {
+    font-size: 22px;
+    line-height: normal;
+    color: #3c3533;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    padding-bottom: 14px;
+    position: relative;
+    margin-bottom: 23px;
+}
+
+.h4-title:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 50px;
+	height: 1px;
+	background: #c3c3c3;
+}
+
+.h4-title a {
+    display: inline-block;
+    color: #3c3533;
+    transition: 0.3s;
+}
+
+.h4-title a:hover {
+    color: #c7ac71;
+}
+
+.sec-btn {
+    position: relative;
+    display: inline-block;
+    height: 51px;
+    padding: 14px 37px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #3c3533;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec-btn:hover {
+    color: #ffffff;
+}
+
+.sec-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border: 1px solid #c7ac71;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.sec-btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border: 1px solid #c7ac71;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.sec-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.sec-btn:hover:before,
+.sec-btn:hover:after {
+    width: calc(100%);
+    height: calc(100%);
+    background: #c7ac71;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.05);
+    animation: buttonhover 0.3s linear 1;
+}
+
+@keyframes buttonhover {
+    0% {
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        box-shadow: 0 0 0 rgba(0,0,0,0.0);
+    }
+    50% {
+        width: calc(100%);
+        height: calc(100%);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.02);
+    }
+    100% {
+        background: #c7ac71;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.05);
+    }
+}
+
+.slick-slide {
+	outline: none;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before,
+.slick-dots li button:hover:before, 
+.slick-dots li button:focus:before {
+    display: none;
+}
+
+.slick-dots {
+    bottom: 64px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    position: absolute;
+    bottom: 65px;
+    z-index: 10;
+}
+
+.slick-dots li {
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+.slick-dots li button,
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    margin: 0 4px;
+    opacity: 0.3;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.slick-dots li button:hover, 
+.slick-dots li.slick-active button,
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet:hover {
+    opacity: 1;
+}
+
+.slick-arrow {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translate(-50%);
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: #c7ac71;
+    font-size: 35px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.slick-arrow:hover {
+    color: #ffffff;
+}
+
+.slick-arrow.prev-arrow {
+    transform: translate(-65px, 0);
+}
+
+.slick-arrow.next-arrow {
+    transform: translate(53px, 0);
+}
+
+.black-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.75;
+    z-index: 0;
+    display: none;
+}
+
+.common-sec {
+    position: relative;
+    overflow: hidden;
+}
+
+.common-sec .container {
+    position: relative;
+    z-index: 1;
+}
+
+.element-left {
+    position: absolute;
+    top: 255px;
+    left: -180px;
+    width: 536px;
+    z-index: 0;
+}
+
+.element-right {
+    position: absolute;
+    top: 277px;
+    right: -170px;
+    width: 523px;
+}
+
+.element-left img,
+.element-left2 img {
+    width: 100%;
+}
+
+.img-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-hover:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.img-hover:hover:before {
+    animation: zoomin 0.6s linear 1;
+}
+
+@keyframes zoomin {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        border-radius: 50%;
+    }
+    50% {
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        border-radius: 50%;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+	border-radius: 0;
+}
+
+.datepicker table tr td.active:active, 
+.datepicker table tr td.active.highlighted:active, 
+.datepicker table tr td.active.active, 
+.datepicker table tr td.active.highlighted.active, 
+.open > .dropdown-toggle.datepicker table tr td.active, 
+.open > .dropdown-toggle.datepicker table tr td.active.highlighted {
+    background-color: #c7ac71;
+    border-color: #c7ac71;
+	border-radius: 0;
+    color: #ffffff;
+	box-shadow: 0 0 15px rgba(199,172,113,0.5);
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu table td.today:before {
+  display: none;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button,
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button:hover {
+	background-color: #c7ac71;
+	border: none;
+	border-radius: 0;
+	box-shadow: 0 0 15px rgba(199,172,113,0.5);
+}
+
+.bootstrap-datetimepicker-widget table td span {
+	border-radius: 0;
+}
+
+.bootstrap-datetimepicker-widget table td span.active,
+.bootstrap-datetimepicker-widget table td i.active {
+	background-color: #c7ac71;
+	color: #ffffff;
+}
+
+/*==========Common CSS End==========*/
+
+
+/*==========Loader CSS Start==========*/
+.loader-wrap {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:150;
+}
+
+.cd-tabs-layer  , .cd-reserv-overlay-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.cd-loader-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.cd-loader-layer .loader-layer, 
+.cd-tabs-layer .tabs-layer, 
+.cd-reserv-overlay-layer .reserv-overlay-layer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-98%);
+    height: 100%;
+    width: 2500%;
+    background:#C7AC71;
+    opacity: 0.3;
+    background-size: 100% 100%;
+}
+.cd-tabs-layer.visible, 
+.cd-loader-layer.visible, 
+.cd-reserv-overlay-layer.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.cd-tabs-layer.opening .tabs-layer, 
+.cd-loader-layer.opening .loader-layer, 
+.cd-reserv-overlay-layer.opening .reserv-overlay-layer  {
+    animation: cd-sequence 0.9s steps(24);
+    animation-fill-mode: forwards;
+}
+.cd-tabs-layer.closing .tabs-layer, 
+.cd-reserv-overlay-layer.closing .reserv-overlay-layer {
+    animation: cd-sequence-reverse 0.9s steps(24);
+    animation-fill-mode: forwards;
+}
+.cd-loader-layer.closing .loader-layer{
+    animation: cd-sequence-reverse 0.9s steps(24);
+    animation-fill-mode: forwards;
+}
+@keyframes cd-sequence {
+  0% {
+    transform: translateY(-50%) translateX(-2%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-98%);
+  }
+}
+@keyframes cd-sequence-reverse {
+  0% {
+    transform: translateY(-50%) translateX(-98%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-2%);
+  }
+}
+
+.loader{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(1.0);
+    text-align: center;
+    z-index: 200;
+}
+
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: 50px auto;
+    background: #c7ac71;
+    border-radius: 50px;
+    -webkit-animation: loader 0.9s infinite alternate;
+    -moz-animation: loader 0.9s infinite alternate;
+}
+
+.loader span:nth-of-type(2){
+    background: #3c3533;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+}
+
+.loader span:nth-of-type(3){
+    background: #c7ac71;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+
+@-webkit-keyframes loader{
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 0.9;
+        -webkit-transform: translateY(0);
+    }
+    100%{
+        width: 24px;
+        height: 24px;
+        opacity: 0.1;
+        -webkit-transform: translateY(-21px);
+    }
+}
+
+@-moz-keyframes loader {
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 0.9;
+        -moz-transform: translateY(0);
+    }
+    100%{
+        width: 24px;
+        height: 24px;
+        opacity: 0.1;
+        -moz-transform: translateY(-21px);
+    }
+}
+/*==========Loader CSS End==========*/
+
+
+/*==========Header CSS Start==========*/
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 155px;
+    background: rgba(24,24,24,0.6);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.header-top {
+    width: 100%;
+    height: 93px;
+    background: transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.header-call {
+    width: 100%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+}
+
+.header-call a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.header-call a img {
+    width: 24px;
+    vertical-align: text-bottom;
+    margin-right: 14px;
+}
+
+.header-call a:hover {
+    color: #c7ac71;
+}
+
+.site-logo {
+    width: 225px;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-right-box {
+    width: 100%;
+    height: 93px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.site-language {
+    display: inline-block;
+}
+
+.language-box {
+    position: relative;
+}
+
+.language-box select {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+   -webkit-appearance: none;
+    padding-right: 16px;
+}
+
+.language-box select option {
+    color: #777777;
+}
+
+.language-box i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    color: #ffffff;
+    pointer-events: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add-to-cart {
+    display: inline-block;
+    margin: 0 21px 0 17px;
+}
+
+.add-to-cart a img {
+    width: 20px;
+}
+
+.login-box {
+    display: inline-block;
+}
+
+.login-box a {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.login-box a img {
+    width: 22px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.login-box a:hover {
+    color: #c7ac71;
+}
+
+.main-navigation {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.main-navigation ul.menu {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+}
+
+.main-navigation ul.menu li {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 20px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.main-navigation ul.menu li:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 5px;
+    height: 5px;
+    background: #c7ac71;
+    border-radius: 50%;
+}
+
+.main-navigation ul.menu li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.main-navigation ul.menu li:first-child:before {
+    display: none;
+}
+
+.main-navigation ul.menu li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.main-navigation ul.menu li a:hover,
+.main-navigation ul.menu li.active a {
+    color: #c7ac71;
+}
+
+.toggle-button {
+    display: none;
+}
+
+/*Sticky Header Start*/
+.site-header.sticky-header {
+    background: rgba(24,24,24,1);
+    height: 80px;
+    transition: 0.3s;
+}
+.sticky-header .header-top {
+    height: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sticky-header .main-navigation {
+    height: 80px;
+    transition: 0.3s;
+}
+/*Sticky Header End*/
+/*==========Header CSS End==========*/
+
+
+/*==========Banner CSS End==========*/
+.main-banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-content {
+    text-align: center;
+    padding-top: 6%;
+}
+
+.banner-content .sec-btn,
+.banner-content .sec-btn:hover {
+	color: #ffffff;
+}
+
+.main-banner-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-origin: content-box;
+    position: relative;
+}
+
+.main-banner-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333232;
+    opacity: 0.65;
+    z-index: 2;
+}
+
+.main-banner-box .container {
+    position: relative;
+    z-index: 5;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.6s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.6s ease, transform 0.3s ease;
+  transition: opacity 0.6s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-slide .slide-bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide .h1-title {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    transition: 0.8s;
+    transition-delay: 2400ms;
+}
+
+.swiper-slide .sec-btn {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    transition: 0.8s;
+    transition-delay: 2400ms;
+}
+
+.swiper-slide.swiper-slide-active .h1-title,
+.swiper-slide.swiper-slide-active .sec-btn {
+    top: 0;
+    opacity: 1;
+    transition: 0.8s;
+    transition-delay: 1s;
+}
+/*==========Banner CSS End==========*/
+
+
+/*==========Book Restaurant Form CSS Start==========*/
+.main-booking-form {
+    margin-top: -56px;
+    margin-bottom: -46px;
+    position: relative;
+    z-index: 1;
+}
+
+.booking-form {
+    background: #2b2724;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.booking-form-box {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+}
+
+.form-content {
+    width: 20%;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px;
+    border-right: 1px solid rgba(255,255,255,0.3);
+    position: relative;
+    height: 102px;
+}
+
+.form-content:last-child {
+    border-right: none;
+}
+
+.form-box {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon {
+    width: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    pointer-events: none;
+}
+
+.form-box i.form-dropdown {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    color: #ffffff;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.form-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 15px 0 35px;
+    -webkit-appearance: none;
+}
+
+.form-input::placeholder {
+    color: #ffffff;
+}
+
+select.form-input option {
+    color: #777777;
+}
+
+.submit-btn {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    color: #c7ac71;
+    text-transform: uppercase;
+    padding: 0;
+    margin-left: auto;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.submit-btn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 10px);
+    transform: translate(0,-50%);
+    width: 30px;
+    height: 1px;
+    background: #c7ac71;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    color: #ffffff;
+}
+
+.submit-btn:hover:before{
+	width: 50px;
+	background: #ffffff;
+}
+/*==========Book Restaurant Form CSS End==========*/
+
+
+/*==========About Us CSS Start==========*/
+.main-about-us {
+    padding-top: 181px;
+    position: relative;
+    z-index: 0;
+}
+
+.about-content {
+    margin-top: -60px;
+}
+
+.about-content .sec-btn {
+    margin-top: 21px;
+}
+
+.about-img-box {
+    position: relative;
+}
+
+.about-img-box:before {
+	content: '';
+	position: absolute;
+	top: -181px;
+	left: 85px;
+	width: 500%;
+	height: 746px;
+	background: #f6f6f6;
+    z-index: 0;
+}
+
+.about-img-box:after {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: 45px;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 15px solid #ebdfc7;
+    z-index: 0;
+}
+
+.about-img {
+    position: relative;
+    width: calc(100% - 45px);
+    height: 640px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+/*==========About Us CSS End==========*/
+
+
+/*==========Our Story CSS Start==========*/
+.our-story {
+    padding-top: 135px;
+    position: relative;
+    z-index: 0;
+}
+
+.story-content {
+    margin-top: -45px;
+}
+
+.story-img-box {
+    position: relative;
+}
+
+.story-img-box:before {
+	content: '';
+	position: absolute;
+	top: -90px;
+	right: 85px;
+	width: 500%;
+	height: 655px;
+	background: #f6f6f6;
+    z-index: 0;
+}
+
+.story-img-box:after {
+    content: '';
+    position: absolute;
+    top: -45px;
+    right: 45px;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 15px solid #ebdfc7;
+    z-index: 0;
+}
+
+.story-img {
+    position: relative;
+    width: calc(100% - 45px);
+    height: 640px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    margin-left: auto;
+    z-index: 1;
+}
+/*==========Our Story CSS End==========*/
+
+
+/*==========Restaurant CSS Start==========*/
+.main-restaurant {
+    padding-top: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+.restaurant-content {
+    padding-top: 165px;
+    position: relative;
+}
+
+.restaurant-title {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 100%;
+    z-index: 1;
+}
+
+.restaurant-back-box {
+    position: absolute;
+    top: 49px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.restaurant-back-slider {
+    width: 150%;
+    height: 500px;
+}
+
+.restaurant-slide-img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.restaurant-slide-img:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #333232;
+	opacity: 0.55;
+}
+
+.restaurant-content-box {
+    background: #3c3533;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.restaurant-content-slide-box {
+    width: 100%;
+    padding: 60px 60px 120px 60px;
+    background: #3c3533;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.restaurant-content-slide-box p {
+    color: #ffffff;
+}
+
+.restaurant-content-slide-box .sec-btn {
+    color: #ffffff;
+    margin-top: 16px;
+}
+/*==========Restaurant CSS End==========*/
+
+
+/*==========Gift Store CSS Start==========*/
+.main-gift-store {
+    background: #f6f6f6;
+    margin-top: -200px;
+    position: relative;
+    padding: 276px 0 90px 0;
+    z-index: 0;
+}
+
+.main-gift-store .element-left {
+    width: 422px;
+    top: 470px;
+    left: -90px;
+}
+
+.main-gift-store .element-right {
+    width: 491px;
+    top: 430px;
+    right: -140px;
+}
+
+.store-title {
+    text-align: center;
+}
+
+.store-title .h2-title {
+    margin-bottom: 46px;
+}
+
+.store-slide-box {
+    background: #ffffff;
+    height: 480px;
+    padding: 25px 35px 8px 35px;
+    text-align: center;
+    border: 10px solid transparent;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.store-slide-box:hover,
+.slick-current .store-slide-box {
+	border-color: #c7ac71;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.13);
+}
+
+.store-img {
+    width: auto;
+    height: 305px;
+    margin: 0 auto 22px auto;
+}
+
+.store-img img {
+    width: auto;
+    height: 100%;
+    display: inline-block;
+}
+
+.buy-now-btn {
+    display: inline-block;
+    font-size: 14px;
+    color: #777777;
+    text-transform: uppercase;
+    padding-left: 21px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.buy-now-btn:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+	width: 16px;
+	height: 1px;
+	background: #777777;
+	transition: 0.3s;
+}
+
+.buy-now-btn:hover {
+    color: #c7ac71;
+}
+
+.buy-now-btn:hover:before {
+    background: #c7ac71;
+}
+
+.store-slider .slick-list {
+	padding: 0 0 60px 0 !important;
+}
+
+.store-slider .slick-arrow {
+    bottom: -15px;
+}
+
+.store-slider .slick-arrow:hover {
+	color: #777777;
+}
+
+.store-slider .slick-dots {
+    bottom: 3px;
+}
+
+.store-slider .slick-dots li button {
+    background: #777777;
+}
+
+.store-slider .slick-dots li button:hover,
+.store-slider .slick-dots li.slick-active button {
+    background: #c7ac71;
+}
+/*==========Gift Store CSS End==========*/
+
+
+/*==========Testimonial - What Our Clients Say CSS Start==========*/
+.main-testimonial {
+    padding: 76px 0 90px 0;
+    background: #3c3533;
+}
+
+.main-testimonial .element-left {
+    width: 654px;
+    top: auto;
+    bottom: -70px;
+    left: -90px;
+}
+
+.main-testimonial .element-right {
+    width: 534px;
+    top: -45px;
+    right: -55px;
+}
+
+.testimonial-title {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-title .h2-title {
+    color: #ffffff;
+    margin-bottom: 46px;
+}
+
+.quote-img {
+    width: 52px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.testimonial-box {
+    text-align: center;
+}
+
+.client-comments p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.client-review {
+    padding-bottom: 43px;
+}
+
+.client-review ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.client-review ul li {
+    display: inline-block;
+    font-size: 17px;
+    color: #efce4a;
+    margin: 0 5px;
+}
+
+.client-box-shape {
+    width: 128px;
+    height: 128px;
+    padding: 9px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.client-box-shape:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 91px;
+    height: 91px;
+    border: 2px solid #c7ac71;
+    transform: rotate(45deg);
+}
+
+.client-box-shape:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 91px;
+    height: 91px;
+    border: 2px solid #c7ac71;
+    transform: rotate(45deg);
+}
+
+.client-img-box {
+	width: 73px;
+    height: 73px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.client-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+    width: 145%;
+    height: 145%;
+    background-size: cover;
+    background-position: center;
+}
+
+.client-name {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: normal;
+    color: #c7ac71;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 18px 0 0 0;
+}
+
+.testimonial-slider .slick-list {
+	padding: 0 0 60px 0 !important;
+}
+
+.testimonial-slider .slick-arrow {
+    bottom: -15px;
+}
+
+.testimonial-slider .slick-dots {
+    bottom: 3px;
+}
+/*==========Testimonial - What Our Clients Say CSS End==========*/
+
+
+/*==========Blog - News & Events CSS Start==========*/
+.main-blog {
+    padding-top: 76px;
+}
+
+.main-blog .element-left {
+    width: 484px;
+    top: 105px;
+    left: -120px;
+}
+
+.main-blog .element-right {
+    width: 546px;
+    top: 325px;
+    right: -190px;
+}
+
+.blog-title {
+    text-align: center;
+}
+
+.blog-title .h2-title {
+    margin-bottom: 46px;
+}
+
+.post-img {
+    width: 100%;
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    text-align: center;
+}
+
+.post-content {
+    padding: 0 50px;
+}
+
+.post-date {
+    font-size: 14px;
+    line-height: normal;
+    color: #777777;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    display: block;
+}
+
+.post-content .h4-title {
+	margin-bottom: 0;
+}
+
+.post-content .h4-title:before {
+    background: #c7ac71;
+}
+
+.main-post .sec-btn {
+	margin-top: 50px;
+}
+/*==========Blog - News & Events CSS End==========*/
+
+
+/*==========Gallery - Stay Connected CSS Start==========*/
+.main-gallery {
+    padding-top: 90px;
+    position: relative;
+}
+
+.main-gallery .container-fluid {
+    padding: 0;
+}
+
+.gallery-slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-id {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51,50,50,0.73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery-img:hover .insta-id {
+	top: 0;
+	opacity: 1;
+}
+
+.insta-id span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 0 auto 10px auto;
+    transition: 0.3s;
+}
+
+.insta-id a {
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.insta-id a:hover span {
+    background: #c7ac71;
+}
+
+.gallery-content {
+    width: 100%;
+    height: 640px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-content-text {
+    padding: 0 18%;
+    text-align: center;
+}
+
+.gallery-content-text .h3-title {
+    color: #3c3533;
+    line-height: 55px;
+}
+
+.gallery-content-text p {
+    margin-bottom: 32px;
+}
+/*==========Gallery - Stay Connected CSS End==========*/
+
+
+/*==========Footer CSS Start==========*/
+.site-footer {
+    padding: 82px 0 33px;
+}
+
+.site-footer .element-left {
+    width: 504px;
+    top: 100px;
+    left: -80px;
+}
+
+.site-footer .element-right {
+    width: 397px;
+    top: auto;
+    bottom: 30px;
+    right: -25px;
+}
+
+.footer-menu {
+    text-align: center;
+}
+
+.site-footer .h4-title {
+	margin-bottom: 28px;
+}
+
+.site-footer .h4-title:before {
+    background: #c7ac71;
+}
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu ul li {
+    margin-bottom: 6px;
+}
+
+.footer-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-menu ul li a {
+    font-size: 14px;
+    color: #777777;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.footer-menu ul li a:hover {
+    color: #c7ac71;
+}
+
+.footer-contact {
+    text-align: center;
+    padding: 0 70px;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+
+.footer-contact p {
+    text-transform: uppercase;
+}
+
+.footer-contact p a {
+    color: #777777;
+    transition: 0.3s;
+}
+
+.footer-contact p a:hover, .footer-contact a:hover {
+    color: #c7ac71;
+    text-decoration: underline;
+}
+
+.footer-contact a {
+    color: #c7ac71;
+    text-transform: uppercase;
+}
+
+.social-icon {
+    padding-top: 19px;
+}
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    color: #777777;
+    margin: 0 6px;
+    transition: 0.3s;
+}
+
+.social-icon a:hover {
+    background: #c7ac71;
+    border-color: #c7ac71;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.subscribe-form {
+    text-align: center;
+}
+
+.subscribe-form .form-box {
+	display: inline-block;
+	width: 280px;
+	margin: 0 auto 20px 0;
+}
+
+.subscribe-form .input-icon {
+	width: 21px;
+	left: 18px;
+}
+
+.subscribe-form .form-input {
+    width: 280px;
+    height: 45px;
+    border: 1px solid #777777;
+    color: #777777;
+    padding: 0 20px 0 60px;
+}
+
+.subscribe-form .form-input::placeholder {
+    color: #777777;
+}
+
+.copy-right {
+    text-align: center;
+}
+
+.copy-right p {
+	text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.copy-right p a {
+    color: #c7ac71;
+}
+
+.copy-right p a:hover {
+    text-decoration: underline;
+}
+/*==========Footer CSS End==========*/
+
+
+/*==========Scroll To Top CSS Start==========*/
+.scroll-top {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: transparent;
+    color: #c7ac71;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #c7ac71;
+    padding: 2px 0;
+    margin: 40px 0 33px 0;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.scroll-top:hover {
+    color: #ffffff;
+    background: #c7ac71;
+}
+
+.scroll-top i {
+    position: relative;
+    animation: move 0.7s linear infinite alternate;
+}
+
+@keyframes move {
+    from {
+        position: relative;
+        top: -3px;
+    }
+    to {
+        position: relative;
+        top: 3px;
+    }
+}
+/*==========Scroll To Top CSS End==========*/
+
+
+/*==========About Us Page CSS Start==========*/
+/*-----Ianner Banner CSS Start-----*/
+.inner-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 252px 0 92px 0;
+}
+
+.inner-banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333232;
+    opacity: 0.65;
+    z-index: 0;
+}
+
+.inner-banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.inner-banner-content {
+    text-align: center;
+}
+
+.inner-banner-content .h1-title span {
+    display: inline-block;
+}
+/*-----Ianner Banner CSS End-----*/
+
+/*-----Inner Page BreadCrumb CSS Start-----*/
+.breadcrumbs {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.breadcrumbs-box {
+    display: inline-block;
+    background: #c7ac71;
+    padding: 10px 32px;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.15);
+}
+
+.breadcrumbs-box a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.breadcrumbs-box a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs-box span {
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.breadcrumbs-box span i {
+    margin: 0 5px 0 5px;
+    font-size: 16px;
+}
+/*-----Inner Page BreadCrumb CSS End-----*/
+
+/*-----About Us CSS Start-----*/
+.page-about-us {
+    padding-top: 157px;
+}
+
+.page-about-us .about-content {
+    margin-top: 0;
+    padding-top: 55px;
+}
+
+.page-about-us .about-img-box:before {
+    top: -157px;
+    height: 722px;
+}
+
+.page-about-box {
+    padding-left: 100px;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.about-content-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    background: #c7ac71;
+    padding: 30px;
+    z-index: 1;
+}
+
+.about-content-box img {
+    width: 46px;
+    opacity: 0.4;
+}
+
+.about-content-box h3 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 25px 0 16px;
+}
+
+.about-content-box h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.about-signature img {
+    width: 100%;
+    opacity: 1;
+}
+
+.page-about-us .about-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.page-about-us .about-content ul li {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #3c3533;
+    position: relative;
+    padding-left: 35px;
+}
+
+.page-about-us .about-content ul li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+}
+
+.about-counter-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 10px;
+}
+
+.about-counter-box {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.about-counting-box {
+    font-size: 35px;
+    color: #c7ac71;
+    font-weight: 700;
+}
+/*-----About Us CSS End-----*/
+
+/*-----Our Chef Skills CSS Start-----*/
+.main-chef-skills {
+    padding-top: 90px;
+}
+
+.main-chef-skills .element-left {
+    width: 484px;
+    top: 125px;
+    left: -35px;
+}
+
+.main-chef-skills .element-right {
+    width: 546px;
+    top: 220px;
+    right: -205px;
+}
+
+.chef-skill-img {
+    width: 100%;
+    text-align: center;
+}
+
+.chef-skill-img img {
+    width: 363px;
+    margin: 0 auto;
+}
+
+.chef-skill-content {
+    padding-top: 77px;
+}
+
+.chef-skill-content .h2-title {
+    margin-bottom: 40px;
+}
+
+.chef-skill-bar-box {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.chef-skill-bar-box:last-child {
+    margin-bottom: 0;
+}
+
+.chef-skill-bar-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #3c3533;
+    margin-bottom: 0;
+}
+
+.chef-skill-bar-percent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #3c3533;
+}
+
+.chef-skill-bar {
+    width: 100%;
+    height: 22px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chef-skill-bar:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 8px;
+    background: rgba(199,172,113,0.45);
+    border-radius: 5px;
+}
+
+.chef-skill-bar-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 0;
+    height: 22px;
+    border-radius: 5px;
+    overflow: visible;
+}
+
+.chef-skill-bar-inner:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 8px;
+    background: #c7ac71;
+    border-radius: 5px;
+}
+
+.chef-skill-bar-inner:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    width: 22px;
+    height: 22px;
+    background: #ffffff;
+    border: 3px solid #c6a15e;
+    border-radius: 50%;
+}
+/*-----Our Chef Skills CSS End-----*/
+
+/*-----About Page Gift Store CSS Start-----*/
+.main-gift-store.about-page-gift-store {
+    margin-top: 0;
+    padding-top: 76px;
+}
+
+.main-gift-store.about-page-gift-store .element-left {
+    top: 270px;
+}
+
+.main-gift-store.about-page-gift-store .element-right {
+    top: 230px;
+}
+/*-----About Page Gift Store CSS End-----*/
+
+/*-----About Page Gallery CSS Start-----*/
+.main-gallery.about-page-gallery {
+    padding-top: 0;
+}
+/*-----About Page Gallery CSS End-----*/
+
+/*==========About Us Page CSS End==========*/
+
+
+/*==========Gallery Page CSS Start==========*/
+
+/*-----Gallery Page Slider CSS Start-----*/
+.main-gallery-page-slider {
+    padding: 112px 0 60px;
+}
+
+.main-gallery-slider {
+    width: 100%;
+    height: 458px;
+    border: 10px solid #c7ac71 !important;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+.main-gallery-img {
+    width: 100%;
+    height: 438px !important;
+    background-size: cover;
+    background-position: center;
+    border: none !important;
+}
+
+.gallery-thumbnail-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 10px solid #ffffff;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.15);
+    position: relative;
+    transition: 0.3s;
+}
+
+.gallery-thumbnail-img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333232;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.gallery-thumbnail-slider .slick-list {
+    padding-bottom: 30px;
+}
+
+.gallery-thumbnail-slider .slick-current .gallery-thumbnail-img {
+    border: 10px solid #c7ac71 !important;
+}
+
+.gallery-thumbnail-slider .slick-current .gallery-thumbnail-img:before {
+    opacity: 0;
+}
+
+.gallery-thumbnail-slider .slick-arrow:hover {
+    color: #777777;
+}
+
+.gallery-thumbnail-slider .slick-arrow.prev-arrow {
+    transform: translate(0,-40px);
+    bottom: auto;
+    top: calc(50%);
+    left: -27px;
+}
+
+.gallery-thumbnail-slider .slick-arrow.next-arrow {
+    transform: translate(0,-40px);
+    bottom: auto;
+    top: calc(50%);
+    left:auto;
+    right: -27px;
+}
+
+.main-gallery-page-slider .element-left {
+    top: 122px;
+    left: -192px;
+}
+
+.main-gallery-page-slider .element-right {
+    width: 546px;
+    top: auto;
+    bottom: 160px;
+    right: -200px;
+}
+/*-----Gallery Page Slider CSS End-----*/
+
+/*==========Gallery Page CSS End==========*/
+
+
+/*==========Offer Page CSS Start==========*/
+
+/*-----Offer Section 1 CSS Start-----*/
+.main-offer {
+    padding: 157px 0 45px 0;
+}
+
+.page-offer-box {
+    position: relative;
+}
+
+.offer-img-box {
+    position: relative;
+}
+
+.offer-img-box:before {
+    content: '';
+    position: absolute;
+    top: -157px;
+    right: 185px;
+    width: 500%;
+    height: 722px;
+    background: #f6f6f6;
+    z-index: 0;
+}
+
+.offer-img-box:after {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: calc(100% - 145px);
+    height: 100%;
+    border: 15px solid #ebdfc7;
+    z-index: 0;
+}
+
+.offer-img {
+    position: relative;
+    left: 45px;
+    width: calc(100% - 45px);
+    height: 640px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.page-offer-content {
+    position: relative;
+    left: -130px;
+    width: calc(100% + 130px);
+    background: #ffffff;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.15);
+    padding: 65px 70px 70px 70px;
+    z-index: 2;
+}
+
+.page-offer-content .h2-title {
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+.page-offer-content .h2-title span:first-child {
+    color: #c7ac71;
+}
+
+.page-offer-content .h2-title span:first-child:before {
+    display: none;
+}
+
+.offer-content-text {
+    margin-bottom: 30px;
+}
+
+.offer-content-text p:last-child {
+    margin-bottom: 0;
+}
+
+.main-offer .element-right {
+    top: 210px;
+    right: -190px;
+    width: 536px;
+}
+/*-----Offer Section 1 CSS End-----*/
+
+/*-----Offer Section 2 CSS Start-----*/
+.main-offer2 {
+    padding: 90px 0 90px 0;
+}
+
+.main-offer2 .page-offer-content {
+    left: 0;
+}
+
+.main-offer2 .offer-img-box:before {
+    right: auto;
+    left: 185px;
+    top: -90px;
+    height: 655px;
+}
+
+.main-offer2 .offer-img-box:after {
+    left: auto;
+    right: 0;
+}
+
+.main-offer2 .offer-img {
+    left: 0;
+}
+
+.main-offer2 .element-left {
+    width: 523px;
+    top: 225px;
+    left: -200px;
+}
+/*-----Offer Section 2 CSS End-----*/
+
+/*==========Offer Page CSS End==========*/
+
+
+
+/*==========Team Page CSS Start==========*/
+
+/*-----Our Team CSS Start-----*/
+.main-team {
+    padding-top: 112px;
+    margin-bottom: -30px;
+}
+
+.team-box {
+    width: 100%;
+    height: 455px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 35px 50px 35px 35px;
+    margin-bottom: 30px;
+}
+
+.team-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(0deg, #333232 10%, transparent);
+    background: -ms-linear-gradient(0deg, #333232 10%, transparent);
+    background: -moz-linear-gradient(0deg, #333232 10%, transparent);
+    background: linear-gradient(0deg, #333232 10%, transparent);
+    z-index: 0;
+}
+
+.team-info {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    z-index: 1;
+}
+
+.team-info .h4-title {
+    color: #ffffff;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.team-box:hover .team-info .h4-title {
+    color: #c7ac71;
+}
+
+.team-info .h4-title:before {
+    display: none;
+}
+
+.chef-position {
+    color: #ffffff;
+    opacity: 0.7;
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+
+.team-box:hover .chef-position {
+    opacity: 1;
+}
+
+.chef-social {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 100%;
+    text-align: center;
+    padding-bottom: 0px;
+    transition: 0.3s;
+}
+
+.team-box:hover .chef-social {
+    padding-bottom: 45px;
+    opacity: 1;
+}
+
+.chef-social:before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1px;
+    height: 0;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.team-box:hover .chef-social:before {
+    height: 32px;
+}
+
+.chef-social a {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px;
+    transition: 0.3s;
+}
+
+.chef-social a:hover {
+    color: #c7ac71;
+}
+
+.main-team .element-right {
+    width: 484px;
+    top: 100px;
+    right: -265px;
+}
+
+.main-team .element-right2 {
+    width: 546px;
+    top: auto;
+    bottom: 130px;
+    right: -200px;
+}
+/*-----Our Team CSS End-----*/
+
+/*==========Team Page CSS End==========*/
+
+
+/*==========Menu Page CSS Start==========*/
+
+/*-----Menu List CSS Start-----*/
+.main-menu-list {
+    padding: 105px 0 60px;
+    overflow: hidden;
+}
+
+.menu-tabbing {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-tabbing .nav.nav-tabs {
+    border-bottom: 1px solid #3c3533;
+    padding-bottom: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0;
+}
+
+.menu-tabbing .nav.nav-tabs li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu-tabbing .nav.nav-tabs li:first-child {
+    margin-left: 0;
+} 
+.menu-tabbing .nav.nav-tabs li:last-child {
+    margin-right: 0;
+}
+
+.menu-tabbing .nav.nav-tabs li a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #777777;
+    font-weight: 500;
+    padding-bottom: 6px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.menu-tabbing .nav.nav-tabs li a:hover, 
+.menu-tabbing .nav.nav-tabs li a.active {
+    color: #3c3533;
+}
+
+.menu-tabbing .nav.nav-tabs li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #c7ac71;
+    transition: 0.3s;
+}
+
+.menu-tabbing .nav.nav-tabs li a:hover:before, 
+.menu-tabbing .nav.nav-tabs li a.active:before {
+    height: 3px;
+}
+
+.menu-list-box {
+    width: 100%;
+    border-bottom: 8px solid transparent;
+    margin-bottom: 30px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.main-menu-box .tab-pane.active .menu-list-box {
+    animation: fadein 0.5s linear 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transition: 0.3s;
+    }
+    to {
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+
+.menu-list-box:hover {
+    border-bottom: 8px solid #c7ac71;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+}
+
+.menu-img {
+    width: 100%;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-list-box:hover .menu-img:before {
+    animation: zoomin 0.6s linear 1;
+}
+
+.menu-info {
+    padding: 30px 10px 16px 10px;
+    text-align: center;
+}
+
+.menu-info p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #c7ac71;
+}
+
+.menu-info .h4-title {
+    color: #3c3533;
+    line-height: 22px;
+    padding-bottom: 0;
+    margin-bottom: 12px;
+}
+
+.menu-info .h4-title:before {
+    display: none;
+}
+
+.menu-rating {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+
+.menu-rating li {
+    display: inline-block;
+    font-size: 16px;
+    color: #fba13a;
+    margin: 0 5px;
+}
+
+.main-menu-list .element-left {
+    top: auto;
+    bottom: 300px;
+}
+
+.main-menu-list .element-right {
+    top: 120px;
+    right: -220px;
+}
+/*-----Menu List CSS End-----*/
+
+/*==========Menu Page CSS End==========*/
+
+
+/*==========Blog Page CSS Start==========*/
+
+/*-----Blog Post CSS Start-----*/
+.main-blog-page {
+    padding: 112px 0 90px 0;
+}
+
+.page-blog-post {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 50px;
+}
+
+.page-post-img {
+    width: 100%;
+    height: 378px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 26px;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.post-meta-box {
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.post-meta-box img {
+    width: auto;
+    max-width: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.post-meta-box p,
+.post-meta-box a {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+    transition: 0.3s;
+}
+
+.post-meta-box a:hover {
+    color: #c7ac71;
+}
+
+.post-meta-box.post-tag {
+    width: 63.45%;
+    margin-right: 0;
+    text-align: right;
+}
+
+.post-meta-box.post-tag span {
+	color: #3c3533;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+	vertical-align: middle;
+}
+
+.post-meta-box.post-tag p {
+	font-style: italic;
+}
+
+.post-title {
+    font-size: 30px;
+    line-height: 40px;
+    color: #3c3533;
+    font-family: 'Playfair Display';
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.post-title a {
+    display: inline-block;
+    color: #3c3533;
+    transition: 0.3s;
+}
+
+.post-title a:hover {
+    color: #c7ac71;
+}
+
+.post-footer {
+    padding-top: 6px;
+}
+
+.post-footer-meta {
+    float: right;
+    padding: 12px 0;
+}
+
+.post-meta-box.post-comment {
+	margin-right: 0;
+}
+
+.blog-sidebar .post-title {
+    font-weight: 800;
+    padding-left: 10px;
+    border-left: 3px solid #c7ac71;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.search-from input {
+    width: 100%;
+    height: 45px;
+    padding: 0 95px 0 20px;
+    border: 1px solid #777777;
+    outline: none;
+    border-radius: 0;
+    font-size: 14px;
+    color: #777777;
+}
+
+.search-from button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #c7ac71;
+    transition: 0.3s;
+}
+
+.search-from button i {
+    position: relative;
+    top: 0;
+    transform: unset;
+    font-size: 22px;
+}
+
+.search-from button:hover {
+    background: #3c3533;
+    color: #ffffff;
+}
+
+.blog-about {
+    padding-top: 50px;
+}
+
+.blog-about-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.blog-about h6 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+    color: #3c3533;
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.blog-about h6 a {
+    display: inline-block;
+    color: #3c3533;
+    transition: 0.3s;
+}
+
+.blog-about h6 a:hover {
+    color: #c7ac71;
+}
+
+.recent-post {
+    padding-top: 30px;
+}
+
+.recent-post-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent-post-img {
+    width: 140px;
+    height: 95px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.recent-post-box:hover .img-hover:before {
+    animation: zoomin 0.6s linear 1;
+}
+
+.recent-post-text {
+    width: calc(100% - 140px);
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.recent-post-text h6 {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 900;
+    color: #3c3533;
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.recent-post-text h6 a {
+    display: inline-block;
+    color: #3c3533;
+    transition: 0.3s;
+}
+
+.recent-post-text h6 a:hover {
+    color: #c7ac71;
+}
+
+.recent-post-text p {
+    margin-bottom: 0;
+}
+
+.categories {
+    padding-top: 30px;
+}
+
+.categories ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.categories ul li {
+    display: block;
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.categories ul li a {
+    display: block;
+    position: relative;
+}
+
+.categories ul li a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: calc(100% - 38px);
+    height: 1px;
+    background: #777777;
+    z-index: 0;
+}
+
+.categories ul li a .categories-text {
+    color: #3c3533;
+    margin-bottom: 0;
+    position: relative;
+    padding-right: 8px;
+    background: #ffffff;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.categories ul li a:hover .categories-text {
+    color: #c7ac71;
+}
+
+.categories ul li a span:last-child {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    width: 30px;
+    height: 30px;
+    background: #c7ac71;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.categories ul li a:hover span:last-child {
+    background: #3c3533;
+}
+
+.tag {
+    padding-top: 27px;
+}
+
+.tag ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.tag ul li {
+    display: inline-block;
+}
+
+.tag ul li a {
+    display: inline-block;
+    padding: 15px 20px;
+    background: #ededed;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 10px;
+    color: #777777;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.tag ul li a:hover {
+    background: #c7ac71;
+    color: #ffffff;
+}
+
+.blog-pagination {
+    display: block;
+    text-align: center;
+}
+
+.pagination-arrow {
+    color: #c7ac71;
+    font-size: 35px;
+    display: inline-block;
+    margin: 0 18px;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.pagination-arrow:hover {
+    color: #777777;
+}
+
+.blog-pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.blog-pagination ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: #c7ac71;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blog-pagination ul li:hover,
+.blog-pagination ul li.active {
+    background: #777777;
+}
+
+.main-blog-page .element-left.element-left2 {
+    top: 37%;
+    width: 422px;
+    left: -100px;
+}
+
+.main-blog-page .element-left.element-left3 {
+    top: auto;
+    bottom: 400px;
+    width: 491px;
+}
+
+.main-blog-page .element-right.element-right2 {
+    top: 47%;
+    right: -220px;
+}
+
+.main-blog-page .element-right.element-right3 {
+    top: auto;
+    bottom: 300px;
+    width: 484px;
+    right: -120px;
+}
+/*-----Blog Post CSS End-----*/
+
+/*==========Blog Page CSS End==========*/
+
+
+/*==========Blog Detail Page CSS Start==========*/
+
+/*-----Blog Post Detail CSS Start-----*/
+.post-comment-box {
+    padding: 5px 0 8px 20px;
+    border-left: 5px solid #c7ac71;
+    margin: 22px 0;
+}
+
+.post-comment-box P {
+    margin-bottom: 0;
+    color: #3c3533;
+    font-style: italic;
+}
+
+.post-comment-box img {
+    width: 39px;
+    opacity: 0.4;
+    float: right;
+    margin-top: -25px;
+}
+
+.post-social-box {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    color: #3c3533;
+    font-size: 16px;
+    margin-right: 13px;
+    transition: 0.3s;
+}
+
+.post-social-box:hover {
+    border-color: #c7ac71;
+    background: #c7ac71;
+    color: #ffffff;
+}
+
+.related-post-img {
+    width: 100%;
+    height: 236px;
+    background-size: cover;
+    background-position: center;
+}
+
+.related-post-text {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.related-post-text .h4-title:before {
+    background: #c7ac71;
+}
+
+.details-post-comment {
+    padding-top: 37px;
+}
+
+.details-post-comment .h2-title,
+.leave-review .h2-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 31px;
+}
+
+.detail-comment-box {
+    width: calc(100% - 50px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.detail-comment-box.even {
+    margin-left: 50px;
+}
+
+.detail-comment-img {
+    width: 95px;
+    height: 95px;
+    display: inline-block;
+}
+
+.detail-comment-text {
+    display: inline-block;
+    width: calc(100% - 95px);
+    padding-left: 15px;
+}
+
+.detail-comment-text .detail-comment-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #3c3533;
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.detail-comment-text a {
+    color: #c7ac71;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.detail-comment-text a:hover {
+    color: #3c3533;
+}
+
+.detail-comment-text a i {
+    margin-right: 7px;
+}
+
+.detail-comment-text p {
+    margin-bottom: 5px;
+}
+
+.leave-review {
+    padding-top: 24px;
+    margin-bottom: -20px;
+}
+
+.leave-review-form .form-box {
+    margin-bottom: 20px;
+}
+
+.form-input2 {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #777777;
+    padding: 0 20px;
+    color: #777777;
+    border-radius: 0;
+    outline: none;
+}
+
+.form-input2::placeholder {
+    color: #777777;
+}
+
+textarea.form-input2 {
+    height: 120px;
+    resize: none;
+    padding: 20px;
+    margin-bottom: -7px;
+}
+/*-----Blog Post Detail CSS End-----*/
+
+/*==========Blog Detail Page CSS End==========*/
+
+
+/*==========Contact Page CSS Start==========*/
+
+/*-----Contact Form CSS Start-----*/
+.main-contact-form {
+    padding-top: 112px;
+}
+
+.contact-form-box {
+    padding: 100px 100px 80px 100px;
+    position: relative;
+}
+
+.contact-box-shape:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border: 7px solid #c7ac71;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.contact-box-shape:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border: 7px solid #c7ac71;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.contact-form .form-box {
+    margin-bottom: 20px;
+}
+
+.main-contact-form .element-left {
+    top: 100px;
+    left: -250px;
+}
+
+.main-contact-form .element-right {
+    right: -250px;
+}
+/*-----Contact Form CSS End-----*/
+
+/*==========Contact Page CSS End==========*/
+
+
+
+/*==========Responsive CSS Start==========*/
+@media screen and (min-width: 1280px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+    .gallery-thumbnail-slider .slick-arrow.prev-arrow {
+        left: -15px;
+    }
+    .gallery-thumbnail-slider .slick-arrow.next-arrow {
+        right: -15px;
+    }
+    .post-meta-box.post-tag {
+        width: 62.45%;
+    }
+    .related-post-text .h4-title {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .form-content {
+        padding: 0 15px;
+    }
+    .form-input {
+        padding-left: 25px;
+    }
+    .submit-btn:hover:before {
+        width: 40px;
+    }
+    .element-left {
+        top: 300px;
+        left: -250px;
+    }
+    .element-right {
+        top: 300px;
+        right: -250px;
+    }
+    .store-slide-box {
+        padding: 25px 5px 8px 5px;
+    }
+    .main-gift-store .element-left {
+        left: -180px;
+    }
+    .main-gift-store .element-right {
+        right: -370px;
+    }
+    .main-testimonial .element-left {
+        bottom: -200px;
+        left: -250px;
+    }
+    .main-testimonial .element-right {
+        top: -155px;
+        right: -255px;
+    }
+    .main-blog .element-left {
+        top: 150px;
+        left: -200px;
+    }
+    .main-blog .element-right {
+        right: -350px;
+    }
+    .post-content {
+        padding: 0 10px;
+    }
+    .gallery-content-text {
+        padding: 0 5%;
+    }
+    .footer-contact {
+        padding: 0 30px;
+    }
+    .site-footer .element-left {
+        left: -330px;
+    }
+    .site-footer .element-right {
+        right: -250px;
+    }
+    .page-about-box {
+        padding-left: 45px;
+    }
+    .about-counter-box {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .chef-skill-img img {
+        width: 100%;
+    }
+    .main-chef-skills .element-left {
+        top: 200px;
+        left: -150px;
+    }
+    .main-chef-skills .element-right {
+        top: 300px;
+        right: -300px;
+    }
+    .page-offer-content {
+        padding: 65px 30px 70px 30px;
+    }
+    .offer-img-box:before {
+        right: 145px;
+    }
+    .offer-img-box:after {
+        width: calc(100% - 105px);
+    }
+    .main-offer2 .offer-img-box:before {
+        left: 145px;
+    }
+    .team-box {
+        padding: 35px 40px 35px 25px;
+    }
+    .post-meta-box.post-tag {
+        width: 55%;
+    }
+    .recent-post-img {
+        width: 100px;
+    }
+    .recent-post-text {
+        width: calc(100% - 100px);
+        padding-left: 15px;
+    }
+    .related-post-img {
+        height: 200px;
+    }
+    .related-post-text .h4-title {
+        font-size: 17px;
+    }
+    .main-contact-form .element-left {
+        left: -350px;
+    }
+    .main-contact-form .element-right {
+        right: -350px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .site-header {
+        height: 100px;
+    }
+    .site-header .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .header-top {
+        height: 100px;
+    }
+    .sticky-header .header-top {
+        height: 80px;
+        border-bottom: none;
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .header-call {
+        width: auto;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+    .header-call a span {
+        display: none;
+    }
+    .site-logo  {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: auto;
+        height: 100px;
+        transition: 0.3s;
+    }
+    .sticky-header .site-logo,
+    .sticky-header .header-call {
+	    height: 80px;
+	    transition: 0.3s;
+	}
+    .header-right-box {
+        position: fixed;
+        top: 35px;
+        right: -400px;
+        width: 200px;
+        background: #181818;
+        height: auto;
+        padding: 0 30px 0 0;
+        display: block;
+        text-align: right;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 101;
+    }
+    .header-right-box.toggle-box {
+        right: 0;
+        opacity: 1;
+    }
+    .language-box {
+        position: fixed;
+        bottom: 40px;
+        right: -400px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 101;
+    }
+    .header-right-box.toggle-box .language-box {
+        right: 135px;
+        opacity: 1;
+    }
+    .login-box a span {
+        display: none;
+    }
+    .add-to-cart {
+        margin: 0 30px;
+    }
+    .toggle-button {
+        display: block;
+        position: fixed;
+        top: 38px;
+        right: 30px;
+        width: 50px;
+        height: 24px;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        transition: 0.5s;
+        z-index: 102;
+    }
+
+    .toggle-menu .toggle-button {
+        right: 240px;
+    }
+
+    .toggle-button span {
+        width: 100%;
+        height: 3px;
+        background: #ffffff;
+        display: block;
+        margin-bottom: 7px;
+        margin-left: auto;
+        transition: 0.3s;
+    }
+
+    .toggle-button span:nth-child(2) {
+        width: 35px;
+    }
+
+    .toggle-button span:nth-child(3) {
+        width: 25px;
+    }
+    .toggle-menu .toggle-button span {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .toggle-menu .toggle-button span:nth-child(1) {
+        width: 25px;
+    }
+    .toggle-menu .toggle-button span:nth-child(3) {
+        width: 100%;
+    }
+    .main-navigation ul.menu {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 320px;
+        height: 100vh;
+        background: #181818;
+        padding: 130px 30px 0;
+        text-align: left;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 100;
+    }
+
+    .main-navigation.toggle-menu ul.menu {
+        right: 0;
+        opacity: 1;
+    }
+
+    .main-navigation ul.menu li {
+        display: block;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    .main-navigation ul.menu li:before {
+        display: none;
+    }
+
+    .main-navigation ul.menu li a {
+        font-size: 18px;
+        position: relative;
+        padding-left: 35px
+
+    }
+
+    .main-navigation ul.menu li a:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        transform: none;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border: 1px solid #c7ac71;
+        border-radius: 0;
+    }
+
+    .main-navigation ul.menu li a:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 3px;
+        transform: none;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border: 1px solid #c7ac71;
+        border-radius: 0;
+    }
+    .sticky-header .toggle-button {
+        top: 28px;
+    }
+    .main-banner,
+    .swiper-container {
+        height: auto;
+    }
+    .swiper-slide .slide-bgimg {
+        position: relative;
+        padding: 230px 0 275px;
+        background-origin: unset;
+    }
+    .banner-content {
+        padding-top: 0;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 118px;
+    }
+    .h1-title {
+        font-size: 43px;
+    }
+    .h2-title {
+        font-size: 38px;
+    }
+    .h2-title span:before {
+        bottom: 12px;
+    }
+    .h3-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .gallery-content-text .h3-title {
+        line-height: 42px;
+    }
+    .main-booking-form {
+        margin-top: -110px;
+        margin-bottom: -110px;
+    }
+    .booking-form-box {
+        padding: 40px 10px 36px 10px; 
+    }
+    .form-content {
+        width: 50%;
+        height: 46px;
+        padding: 0 30px;
+    }
+    .form-content:nth-child(even) {
+        border-right: none;
+    }
+    .form-content:last-child {
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+    }
+    .submit-btn {
+        margin: 0 auto;
+    }
+    .submit-btn:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 10px);
+        transform: translate(0,-50%);
+        width: 30px;
+        height: 1px;
+        background: #c7ac71;
+        transition: 0.3s;
+    }
+    .submit-btn:hover:after {
+        width: 40px;
+        background: #ffffff;
+    }
+    .main-about-us {
+        padding-top: 180px;
+    }
+    .about-img-box {
+        margin-top: 65px;
+    }
+    .about-img-box:before {
+        top: -245px;
+        height: 810px;
+    }
+    .about-content,
+    .story-content {
+        margin-top: 36px;
+    }
+    .main-restaurant {
+        padding-top: 75px;
+    }
+    .restaurant-back-box {
+        top: 28px;
+        width: 100%;
+        height: 500px;
+    }
+    .restaurant-back-slider {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 1000px;
+        height: 100%;
+    }
+    .main-gift-store {
+        margin-top: -65px;
+        padding: 152px 0 90px 0;
+    }
+    .post-content {
+        padding: 0 30px;
+    }
+    .blog-slider {
+        padding-bottom: 75px;
+    }
+
+    .blog-slider .slick-dots {
+        bottom: 18px;
+    }
+
+    .blog-slider .slick-dots li button {
+        background: #777777;
+    }
+
+    .blog-slider .slick-dots li button:hover, 
+    .blog-slider .slick-dots li.slick-active button {
+        background: #c7ac71;
+    }
+
+    .blog-slider .slick-arrow {
+        bottom: 0;
+    }
+    .blog-slider .slick-arrow:hover {
+        color: #777777;   
+    }
+    .main-post .sec-btn {
+        margin-top: 34px;
+    }
+    .gallery-slider {
+        display: block;
+        flex-wrap: unset;
+    }
+    .gallery-img {
+        flex: unset;
+        max-width: unset;
+    }
+    .gallery-content {
+        display: block;
+        height: auto;
+        padding: 76px 0 90px 0;
+    }
+    .footer-contact {
+        padding: 75px 130px 0px;
+        border: none;
+    }
+    .subscribe-form {
+        padding-top: 82px;
+    }
+    .subscribe-form .form-box {
+        width: 50%;
+    }   
+    .subscribe-form .form-input {
+        width: 100%;
+    }
+    .element-left {
+        top: auto;
+        left: -200px;
+        bottom: 70px;
+        width: 400px;
+    }
+    .element-right {
+        top: auto;
+        right: -220px;
+        bottom: 30px;
+        width: 400px;
+    }
+    .main-gift-store .element-left {
+        width: 400px;
+        top: 150px;
+        bottom: auto;
+    }
+    .main-gift-store .element-right {
+        width: 400px;
+        top: auto;
+        right: -250px;
+        bottom: 100px;
+    }
+    .main-testimonial .element-left {
+        bottom: -100px;
+        left: -150px;
+        width: 400px;
+    }
+    .main-testimonial .element-right {
+        top: -100px;
+        right: -250px;
+        width: 400px;
+        bottom: auto;
+    }
+    .main-blog .element-left {
+        top: 100px;
+        left: -150px;
+        width: 400px;
+        bottom: auto;
+    }
+    .main-blog .element-right {
+        right: -250px;
+        top: auto;
+        width: 400px;
+        bottom: 100px;
+    }
+    .site-footer .element-left {
+        left: -200px;
+        top: 100px;
+        bottom: auto;
+        width: 400px;
+    }
+    .site-footer .element-right {
+        right: -200px;
+    }
+    .store-slider .slick-list {
+        overflow: visible;
+        width: 1100px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .store-slider .slick-slide {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .store-slider .slick-slide.slick-current {
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .gallery-content-text {
+        padding: 0 45px;
+    }
+    .inner-banner {
+        padding: 208px 0 77px 0;
+    }
+    .page-about-us {
+        padding-top: 92px;
+    }
+    .page-about-box {
+        padding-left: 100px;
+    }
+    .page-about-us .about-content {
+        padding-top: 36px;
+    }
+    .about-counter-box {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .main-chef-skills {
+        padding-top: 56px;
+    }
+    .chef-skill-content {
+        padding-top: 0;
+    }
+    .chef-skill-img img {
+        width: 363px;
+    }
+    .chef-skill-img {
+        padding-top: 90px;
+    }
+    .main-chef-skills .element-left {
+        top: 100px;
+        left: -100px;
+        width: 400px;
+    }
+    .main-chef-skills .element-right {
+        top: auto;
+        bottom: 100px;
+        right: -200px;
+        width: 500px;
+    }
+    .about-content-box h3 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .about-content-box h4 {
+        font-size: 22px;
+    }
+    .about-counting-box {
+        font-size: 30px;
+    }
+    .chef-skill-content .h2-title {
+        text-align: center;
+    }
+    .main-gallery-page-slider .element-left,
+    .main-gallery-page-slider .element-right {
+        width: 400px;
+    }
+    .page-offer-content {
+        left: 0;
+        width: 100%;
+        background: transparent;
+        padding: 0;
+        margin-top: 45px;
+        box-shadow: none;
+    }
+    .page-offer-content .h2-title span:before {
+        bottom: 4px;
+    }
+    .main-offer .element-right {
+        top: auto;
+        bottom: 50px;
+        right: -200px;
+        width: 400px;
+    }
+    .main-offer2 .element-left {
+        width: 400px;
+        top: auto;
+        bottom: 100px;
+        left: -250px;
+    }
+    .main-team {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+    .main-team .element-left {
+        bottom: auto;
+        top: 100px;
+    }
+    .main-team .element-right {
+        display: none;
+    }
+    .main-team .element-right2 {
+        display: block;
+        width: 400px;
+        bottom: 0;
+    }
+    .team-slider .slick-dots {
+        bottom: -22px;
+    }
+
+    .team-slider .slick-dots li button {
+        background: #777777;
+    }
+
+    .team-slider .slick-dots li button:hover, 
+    .team-slider .slick-dots li.slick-active button {
+        background: #c7ac71;
+    }
+    .main-menu-list .element-left,
+    .main-menu-list .element-right,
+    .main-blog-page .element-left,
+    .main-blog-page .element-right {
+    	display: none;
+    }
+    .main-blog-page {
+        padding: 112px 0 70px 0;
+    }
+    .post-meta-box.post-tag {
+        width: 60%;
+    }
+    .blog-sidebar {
+        padding-top: 86px;
+    }
+    .related-post-text .h4-title {
+        font-size: 19px;
+    }
+    .details-post-comment .h2-title, 
+    .leave-review .h2-title {
+        line-height: 58px;
+        margin-bottom: 23px;
+    }
+    .detail-comment-box {
+        width: 100%;
+    }
+    .detail-comment-box.even {
+        margin-left: 0px;
+    }
+    .main-contact-form .element-left {
+        left: -200px;
+    }
+    .main-contact-form .element-right {
+       right: -200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .restaurant-back-slider {
+        width: 800px;
+    }
+    .about-img,
+    .story-img {
+        height: 400px;
+    }
+    .story-img {
+        background-position: top center;
+    }
+    .about-img-box:before {
+        height: 570px;
+    }
+    .story-img-box:before {
+        height: 415px;
+    }
+    .main-restaurant:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: #f6f6f6;
+        z-index: 0;
+    }
+    .restaurant-content {
+        padding-top: 140px;
+    }
+    .main-gift-store {
+        margin-top: 0;
+        padding: 72px 0 90px 0;
+    }
+    .store-slider .slick-list {
+        width: 100%;
+        position: relative;
+        left: 0;
+        transform: unset;
+        padding: 0 80px 60px 80px !important;
+    }
+    .store-slide-box {
+        height: 380px;
+    }
+    .store-img {
+        height: 205px;
+    }
+    .post-img {
+        height: 320px;
+    }
+    .footer-contact {
+        padding: 75px 60px 0px;
+    }
+    .subscribe-form .form-box {
+        width: 100%;
+    }
+    .about-content-box h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .about-content-box h4 {
+        font-size: 18px;
+    }
+    .page-about-box {
+        padding-left: 45px;
+    }
+    .page-about-us .about-img-box:before {
+        height: 482px;
+    }
+    .main-gallery-slider {
+        height: 320px;
+    }
+    .main-gallery-img {
+        height: 300px !important;
+    }
+    .gallery-thumbnail-img {
+        height: 150px;
+    }
+    .offer-img {
+        height: 400px;
+    }
+    .offer-img-box:before {
+        height: 482px;
+    }
+    .main-offer2 .offer-img-box:before {
+        height: 415px;
+    }
+    .page-offer-content .h2-title {
+        font-size: 35px;
+    }
+    .team-slider .slick-list {
+        overflow: visible;
+        padding: 0 80px;
+    }
+    .menu-img {
+    	height: 230px;
+    }
+    .menu-info {
+    	padding: 30px 5px 16px 5px;
+    }
+    .post-meta-box {
+        margin-right: 0;
+        width: 50%;
+    }
+    .post-meta-box.post-by {
+        text-align: right;
+    }
+    .post-meta-box.post-tag {
+        width: 100%;
+        text-align: left;
+        padding-top: 15px;
+    }
+    .post-footer-meta .post-meta-box {
+        width: auto;
+        margin-right: 22px;
+    }
+    .post-meta-box.post-comment {
+        margin-right: 0;
+    }
+    .page-post-img {
+        height: 280px;
+    }
+    .post-title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .related-post-img {
+        height: 200px;
+        width: 300px;
+        margin: auto;
+    }
+    .related-post-box {
+        margin-bottom: 30px;
+    }
+    .related-post-text .h4-title {
+        font-size: 20px;
+    }
+    .detail-comment-text {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .details-post-comment {
+        text-align: center;
+    }
+    .detail-comment-img {
+        margin: 0 auto 14px auto;
+    }
+    .contact-form-box {
+        padding: 60px 44px 40px 44px;
+    }
+    .contact-box-shape:before,
+    .contact-box-shape:after {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        border: 4px solid #c7ac71;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 0 30px;
+    }
+    .site-logo {
+        width: 150px;
+    }
+    .h1-title {
+        font-size: 7.4vw;
+    }
+    .store-slider .slick-list {
+        padding: 0 0 60px 0 !important;
+    }
+    .gallery-img {
+        height: 250px;
+    }
+    .footer-contact {
+        padding: 75px 15px 0px;
+    }
+    .form-content {
+        width: 100%;
+        height: 60px;
+        border: none;
+    }
+    .main-booking-form {
+        margin-bottom: -258px;
+    }
+    .main-about-us {
+        padding-top: 328px;
+    }
+    .about-img-box:before {
+        height: 718px;
+        top: -393px;
+    }
+    .restaurant-content-slide-box {
+        padding: 60px 30px 120px 30px;
+    }
+    .booking-form-box {
+        padding: 40px 0 36px 0;
+    }
+    .inner-banner-content .h1-title {
+        font-size: 43px;
+    }
+    .page-about-us {
+        padding-top: 92px;
+    }
+    .about-content-box {
+        width: calc(100% - 90px);
+    }
+    .about-counter-box {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-counter-box:last-child {
+        margin-bottom: 0;
+    }
+    .chef-skill-img img {
+        width: 316px;
+    }
+    .main-gallery-thumbnail {
+        display: none;
+    }
+    .main-gallery-slider .slick-arrow.prev-arrow {
+        left: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+        width: 30px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 5px;
+        background: #c7ac71;
+        color: #ffffff;
+    }
+    .main-gallery-slider .slick-arrow.prev-arrow:hover {
+        background: #ffffff;
+        color: #c7ac71;
+    }
+    .main-gallery-slider .slick-arrow.next-arrow {
+        left: auto;
+        right: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+        width: 30px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        background: #c7ac71;
+        color: #ffffff;
+    }
+    .main-gallery-slider .slick-arrow.next-arrow:hover {
+        background: #ffffff;
+        color: #c7ac71;
+    }
+    .main-gallery-page-slider .element-left {
+        width: 350px;
+        top: 20px;
+    }
+    .main-gallery-page-slider .element-right {
+        width: 350px;
+        bottom: -40px;
+    }
+    .offer-img-box:before {
+        right: 85px;
+    }
+    .offer-img-box:after {
+        width: calc(100% - 45px);
+    }
+    .main-offer2 .offer-img-box:before {
+        left: 85px;
+    }
+    .team-slider .slick-list {
+        padding: 0;
+        overflow: hidden;
+    }
+    .menu-list-box {
+    	width: 315px;
+    	margin: 0 auto 30px auto;
+    }
+    .menu-tabbing .nav.nav-tabs {
+    	position: relative;
+    	left: -30px;
+    	width: calc(100% + 60px);
+    	padding: 0 30px 3px 30px;
+    	display: block;
+	    white-space: nowrap;
+	    overflow: auto;
+    }
+    .blog-pagination ul li {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin: 0 5px;
+    }
+    .pagination-arrow {
+        font-size: 28px;
+        margin: 0 10px;
+    }
+    .main-contact-form .container {
+        padding: 0;
+    }
+    .main-contact-form .element-left,
+    .main-contact-form .element-right {
+        display: none;
+    }
+    .restaurant-title {
+    	left: 50%;
+    	transform: translate(-50%);
+    	width: 375px;
+    }
+    .restaurant-back-box {
+    	top: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container,
+    .site-header .container {
+        padding: 0 15px;
+    }
+    .h1-title {
+        font-size: 9vw;
+    }
+    .h2-title {
+        font-size: 35px;
+    }
+    .h2-title span:before {
+        bottom: 13px;
+    }
+    .toggle-button {
+        right: 15px;
+    }
+    .toggle-menu .toggle-button {
+        right: 185px;
+    }
+    .main-navigation ul.menu {
+        width: 250px;
+        padding: 130px 15px 0;
+    }
+    .header-right-box {
+        padding: 0 15px 0 0;
+        width: 150px;
+    }
+    .add-to-cart {
+        margin: 0 15px;
+    }
+    .header-right-box.toggle-box .language-box {
+        right: 100px;
+    }
+    .form-content {
+        padding: 0 20px;
+    }
+    .main-about-us {
+        padding-top: 308px;
+    }
+    .about-img, .story-img {
+        height: 320px;
+        width: calc(100% - 25px);
+    }
+    .about-img-box:after {
+        top: -25px;
+        left: 25px;
+        width: calc(100% - 25px);
+        height: 100%;
+        border: 10px solid #ebdfc7;
+    }
+    .about-img-box:before {
+        height: 643px;
+        top: -373px;
+    }
+    .story-img-box:after {
+        top: -25px;
+        right: 25px;
+        width: calc(100% - 25px);
+        border: 10px solid #ebdfc7;
+    }
+    .our-story {
+        padding-top: 115px;
+    }
+    .story-img-box:before {
+        height: 340px;
+        top: -70px;
+    }
+    .restaurant-content-slide-box {
+        padding: 60px 20px 120px 20px;
+    }
+    .post-content {
+        padding: 0 10px;
+    }
+    .gallery-content-text {
+        padding: 0 30px;
+    }
+    .page-about-us {
+        padding-top: 72px;
+    }
+    .page-about-us .about-img-box:before {
+        height: 407px;
+        top: -137px;
+    }
+    .page-about-box {
+        padding-left: 25px;
+    }
+    .about-content-box {
+        width: calc(100% - 50px);
+        padding: 20px 15px;
+    }
+    .about-content-box h3 {
+        font-size: 18px;
+        margin: 20px 0 10px;
+    }
+    .about-content-box h4,
+    .chef-skill-bar-title,
+    .chef-skill-bar-percent {
+        font-size: 16px;
+    }
+    .chef-skill-img img {
+        width: 100%;
+    }
+    .main-gallery-slider {
+        height: 280px;
+    }
+    .main-gallery-img {
+        height: 260px !important;
+    }
+    .main-offer {
+        padding: 137px 0 45px 0;
+    }
+    .offer-img {
+        left: 25px;
+        width: calc(100% - 25px);
+        height: 320px;
+    }
+    .offer-img-box:before {
+        top: -137px;
+        height: 407px;
+    }
+    .offer-img-box:after {
+        width: calc(100% - 25px);
+        border: 10px solid #ebdfc7;
+        top: -25px;
+    }
+    .main-offer2 {
+        padding: 70px 0 90px 0;
+    }
+    .main-offer2 .offer-img-box:before {
+        top: -70px;
+        height: 340px;
+    }
+    .team-box {
+        height: 350px;
+    }
+    .menu-list-box {
+    	width: 100%;
+    }
+    .post-footer-meta .post-meta-box {
+        margin-right: 10px;
+    }
+    .post-meta-box.post-comment {
+        margin-right: 0;
+    }
+    .page-post-img {
+        height: 220px;
+    }
+    .blog-pagination ul li {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    .pagination-arrow {
+        font-size: 25px;
+        margin: 0 10px;
+    }
+    .related-post-img {
+        width: 100%;
+    }
+    .restaurant-title {
+    	width: 300px;
+    }
+}
+
+@media screen and (max-width: 991px) and (max-height: 600px) {
+    .main-navigation ul.menu {
+        padding: 100px 15px 0;
+    }
+    .main-navigation ul.menu li a {
+        font-size: 16px;
+    }
+}
+/*==========Responsive CSS End==========*/
+
+
