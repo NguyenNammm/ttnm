@@ -142,14 +142,16 @@
                     <span></span>
                   </button>
                   <ul class="menu">
-                    <li class="menu-item">
+                    <li class="menu-item active">
                       <a href="index.html">Trang chủ</a>
                     </li>
-                    <li class="menu-item"><a href="offer.html">Đặt món</a></li>
+                    <li class="menu-item"><a href="offer.html">Giảm giá</a></li>
                     <li class="menu-item"><a href="menu.html">Menu</a></li>
-                    <li class="menu-item"><a href="gallery.html">Ảnh</a></li>
-                    <li class="menu-item"><a href="team.html">Nhóm</a></li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
+                      <a href="gallery.html">Thư viện</a>
+                    </li>
+                    <li class="menu-item"><a href="team.html">Nhóm 5</a></li>
+                    <li class="menu-item">
                       <a href="contact.html">Liên hệ</a>
                     </li>
                     <li class="menu-item">
@@ -191,7 +193,7 @@
                               href="javascript:void(0)"
                               title="Read More"
                               class="sec-btn"
-                              ><span>Read More</span></a
+                              ><span>Xem thêm...</span></a
                             >
                           </div>
                         </div>
@@ -220,7 +222,7 @@
                               href="javascript:void(0)"
                               title="Read More"
                               class="sec-btn"
-                              ><span>Read More</span></a
+                              ><span>Xem thêm...</span></a
                             >
                           </div>
                         </div>
@@ -249,7 +251,7 @@
                               href="javascript:void(0)"
                               title="Read More"
                               class="sec-btn"
-                              ><span>Read More</span></a
+                              ><span>Xem thêm...</span></a
                             >
                           </div>
                         </div>
@@ -273,7 +275,7 @@
               <div class="booking-form">
                 <form>
                   <div class="booking-form-box">
-                    <div class="form-content">
+                    <div class="form-content" style="">
                       <div class="form-box">
                         <span class="input-icon"
                           ><img
@@ -281,10 +283,11 @@
                             alt="Input Icon"
                         /></span>
                         <select class="form-input">
-                          <option>Restaurant</option>
-                          <option>Restaurant 2</option>
-                          <option>Restaurant 3</option>
-                          <option>Restaurant 4</option>
+                          <option>Chọn cơ sở</option>
+                          <option>Cơ sở 1</option>
+                          <option>Cơ sở 2</option>
+                          <option>Cơ sở 3</option>
+                          <option>Cơ sở 4</option>
                         </select>
                         <i
                           class="fa fa-angle-down form-dropdown"
@@ -300,10 +303,11 @@
                             alt="Input Icon"
                         /></span>
                         <select class="form-input">
-                          <option>Guest</option>
-                          <option>Guest 2</option>
-                          <option>Guest 3</option>
-                          <option>Guest 4</option>
+                          <option hidden="true" selected>Loại bàn</option>
+                          <option>Bàn 1 người</option>
+                          <option>Bàn 2 người</option>
+                          <option>Bàn 3 người</option>
+                          <option>Bàn 4 người</option>
                         </select>
                         <i
                           class="fa fa-angle-down form-dropdown"
@@ -321,7 +325,7 @@
                         <input
                           type="text"
                           name="date"
-                          placeholder="Choose Date"
+                          placeholder="Ngày đặt bàn "
                           class="form-input"
                           required
                           id="datepicker"
@@ -342,7 +346,7 @@
                         <input
                           type="text"
                           name="time"
-                          placeholder="Session"
+                          placeholder="Thời gian"
                           class="form-input"
                           required
                           id="timepicker"
@@ -355,8 +359,12 @@
                     </div>
                     <div class="form-content">
                       <div class="form-box">
-                        <button type="submit" class="submit-btn">
-                          Make Booking
+                        <button
+                          type="submit"
+                          class="submit-btn"
+                          style="margin-left: 65px"
+                        >
+                          Đặt bàn
                         </button>
                       </div>
                     </div>
@@ -399,7 +407,7 @@
                   eleifend.
                 </p>
                 <a href="about-us.html" title="Learn More" class="sec-btn"
-                  ><span>Learn more</span></a
+                  ><span>Tìm hiểu thêm...</span></a
                 >
               </div>
             </div>
@@ -518,7 +526,7 @@
                             href="offer.html"
                             title="Learn More"
                             class="sec-btn"
-                            ><span>Learn more</span></a
+                            ><span>Tìm hiểu thêm...</span></a
                           >
                         </div>
                         <div class="restaurant-content-slide-box">
@@ -539,7 +547,7 @@
                             href="offer.html"
                             title="Learn More"
                             class="sec-btn"
-                            ><span>Learn more</span></a
+                            ><span>Tìm hiểu thêm...</span></a
                           >
                         </div>
                         <div class="restaurant-content-slide-box">
@@ -560,7 +568,7 @@
                             href="offer.html"
                             title="Learn More"
                             class="sec-btn"
-                            ><span>Learn more</span></a
+                            ><span>Tìm hiểu thêm...</span></a
                           >
                         </div>
                       </div>
@@ -586,7 +594,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="store-title">
-                <h2 class="h2-title">Gift <span>Store</span></h2>
+                <h2 class="h2-title">Quà <span>Tặng</span></h2>
               </div>
             </div>
           </div>
@@ -674,7 +682,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="testimonial-title">
-                <h2 class="h2-title">what our <span>clients say</span></h2>
+                <h2 class="h2-title">Đánh giá từ <span>khách hàng</span></h2>
               </div>
             </div>
           </div>
@@ -828,7 +836,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="blog-title">
-                <h2 class="h2-title">News & <span>Events</span></h2>
+                <h2 class="h2-title">Tin tức & <span>Sự kiện</span></h2>
               </div>
             </div>
           </div>
@@ -858,7 +866,7 @@
                     <span class="post-date">24 May, 2020</span>
                     <h4 class="h4-title">
                       <a href="blog-detail.html"
-                        >Three Course dinneg experience</a
+                        >Three Course dinner experience</a
                       >
                     </h4>
                   </div>
@@ -882,7 +890,7 @@
             <div class="row">
               <div class="col-lg-12 text-center">
                 <a href="blog.html" title="View All Events" class="sec-btn"
-                  ><span>View All Events</span></a
+                  ><span>Xem thêm...</span></a
                 >
               </div>
             </div>
@@ -906,7 +914,7 @@
                   <div class="insta-id">
                     <a href="javascript:void(0)">
                       <span
-                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
                       ></span>
                       @foodecart
                     </a>
@@ -936,7 +944,7 @@
                   <div class="insta-id">
                     <a href="javascript:void(0)">
                       <span
-                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
                       ></span>
                       @foodecart
                     </a>
@@ -962,7 +970,7 @@
             <div class="col-lg-4 p-0">
               <div class="gallery-content">
                 <div class="gallery-content-text">
-                  <h3 class="h3-title">Stay Connected</h3>
+                  <h3 class="h3-title">Follow Us</h3>
                   <p>
                     Follow @foodecart Vivamus risus dui, ullamcorper in leo non,
                     suscipit interdum orci.
@@ -971,7 +979,14 @@
                     href="javascript:void(0)"
                     title="Follow Us on Instagram"
                     class="sec-btn"
-                    ><span>Follow Us on Instagram</span></a
+                    ><span>Instagram</span></a
+                  >
+                  <span style="padding: 3px"></span>
+                  <a
+                    href="javascript:void(0)"
+                    title="Follow Us on Instagram"
+                    class="sec-btn"
+                    ><span>Facebook</span></a
                   >
                 </div>
               </div>
@@ -987,7 +1002,7 @@
                   <div class="insta-id">
                     <a href="javascript:void(0)">
                       <span
-                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
                       ></span>
                       @foodecart
                     </a>
@@ -1017,7 +1032,7 @@
                   <div class="insta-id">
                     <a href="javascript:void(0)">
                       <span
-                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
                       ></span>
                       @foodecart
                     </a>
@@ -1059,19 +1074,19 @@
               <div class="footer-menu">
                 <h4 class="h4-title">Links</h4>
                 <ul>
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="offer.html">Offer</a></li>
+                  <li><a href="offer.html">Giảm giá</a></li>
                   <li><a href="menu.html">Menu</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="gallery.html">Thư viện</a></li>
+                  <li><a href="team.html">Nhóm 5</a></li>
+                  <li><a href="contact.html">Liên hệ</a></li>
+                  <li><a href="about-us.html">Giới thiệu</a></li>
+                  <!-- <li><a href="blog.html">Blog</a></li> -->
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 p-0">
               <div class="footer-contact">
-                <h4 class="h4-title">Contact Us</h4>
+                <h4 class="h4-title">Thông tin liên hệ</h4>
                 <p>
                   The old stables, braywood house, drift road winkfield,
                   windsor, berkshire, Sl4 4rra
@@ -1093,14 +1108,14 @@
                     ><i class="fa fa-facebook-official" aria-hidden="true"></i
                   ></a>
                   <a href="javascript:void(0)" title="Follow on Twitter"
-                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ><i class="fa fa-wechat" aria-hidden="true"></i
                   ></a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="subscribe-form">
-                <h4 class="h4-title">Subscribe Now</h4>
+                <h4 class="h4-title">Nhận thông báo</h4>
                 <form>
                   <div class="form-box">
                     <span class="input-icon"
@@ -1109,14 +1124,14 @@
                     <input
                       type="email"
                       name="subscribe_email"
-                      placeholder="Email Address"
+                      placeholder="Địa chỉ email"
                       class="form-input"
                       required
                     />
                   </div>
                   <div class="form-box">
                     <button type="submit" id="send" class="sec-btn">
-                      <span>Subscribe</span>
+                      <span>Đăng kí</span>
                     </button>
                   </div>
                 </form>
@@ -1130,13 +1145,13 @@
                 ><span><i class="fa fa-angle-up" aria-hidden="true"></i></span
               ></a>
               <!-- Scroll To Top End -->
-              <div class="copy-right">
+              <!-- <div class="copy-right">
                 <p>
                   Copyright © 2020
                   <a href="index.html" title="FoodeCart">FoodeCart.</a> All
                   rights reserved
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
