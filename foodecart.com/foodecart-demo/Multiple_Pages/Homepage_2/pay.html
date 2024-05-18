@@ -1,95 +1,427 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- Mirrored from shivaaythemes.in/foodecart-demo/Multiple_Pages/Homepage_2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 14:41:39 GMT -->
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/style1.css">
-<style>
+  <title>FoodeCart - Thanh toán</title>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="HTML5 Template" />
+  <meta name="description" content="FoodeCart, HTML5 Template" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- FavIcon Link -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16" />
 
+  <!-- Bootstrap CSS Link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  <!-- Date Picker CSS Link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css" />
 
-</style>
+  <!--  Google Fonts CSS Link -->
+  <!-- PlayfairDisplay Font Link -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Poppins Font Link -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icon CSS Link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+
+  <!-- Slick Slider CSS Link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+
+  <!-- Swiper Slider CSS Link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/swiper.css" />
+
+  <!-- Wow Animation CSS Link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+
+  <!-- Main Style CSS Link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style1.css" />
 </head>
+
 <body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
 
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+    }
 
-<div class="row">
-  <div class="col-75">
-    <div class="container">
-      <form action="/action_page.php">
-      
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label,
+    input,
+    textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
         <div class="row">
-          <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="New York">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
+          <div class="col-lg-3">
+            <div class="header-call">
+              <a href="javascript:void(0)" title="Call on 1900 6886">
+                <img src="assets/images/icon-call.png" alt="Call Icon" />
+                <span>1900 6886</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Logo Start -->
+            <div class="site-logo">
+              <a href="index.html">
+                <img src="assets/images/logo.png" alt="Logo" class="non-sticky" />
+              </a>
+            </div>
+            <!-- Logo End -->
+          </div>
+          <div class="col-lg-3">
+            <div class="header-right-box">
+              <div class="add-to-cart">
+                <a href="store.html">
+                  <img src="assets/images/icon-cart.png" alt="Cart Icon" />
+                </a>
               </div>
-              <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
+              <div class="login-box">
+                <a href="javascript:void(0)" title="Login">
+                  <img src="assets/images/icon-login.png" alt="Login Icon" />
+                  <span>Đăng nhập</span>
+                </a>
               </div>
             </div>
           </div>
-
-          <div class="col-50">
-            <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
-          </div>
-          
         </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input type="submit" value="Continue to checkout" class="btn">
-      </form>
+      </div>
     </div>
-  </div>
-  <div class="col-25">
+    <!-- Menu Start -->
+    <div class="header-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Navigation Menu Start -->
+            <nav class="main-navigation">
+              <button class="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="menu">
+                <li class="menu-item"><a href="index.html">Trang chủ</a></li>
+                <li class="menu-item">
+                  <a href="offer.html">Giảm giá</a>
+                </li>
+                <li class="menu-item"><a href="menu.html">Menu</a></li>
+                <li class="menu-item"><a href="gallery.html">Thư viện</a></li>
+                <li class="menu-item"><a href="team.html">Nhóm 8</a></li>
+                <li class="menu-item">
+                  <a href="contact.html">Liên hệ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="about-us.html">Giới thiệu</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- Navigation Menu End -->
+            <div class="black-shadow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu End -->
+  </header>
+  <section class="inner-banner" id="main-banner" style="background-image: url('assets/images/offer-banner-img.jpg')">
     <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      <div class="row">
+        <div class="col-12">
+          <div class="inner-banner-content">
+            <h1 class="h1-title">Thanh <span>Toán</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <!-- Loader Start -->
+  <div class="loader-wrap">
+    <div class="loader-item">
+      <div class="cd-loader-layer" data-frame="25">
+        <div class="loader-layer"></div>
+      </div>
+      <span class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
     </div>
   </div>
-</div>
+  <!-- Loader Start -->
 
+  <div id="main">
+    <!-- Header Start -->
+
+    <!-- Menu Start -->
+
+    <!-- Menu End -->
+    </header>
+    <!-- Header End -->
+
+
+    <div class="row1">
+      <div class="col-75">
+        <div class="container1">
+          <form action="">
+            <div class="row1">
+              <div class="col-50">
+                <h3>Hóa đơn</h3>
+                <label for="fname"><i class="fa fa-user"></i> Họ và tên</label>
+                <input type="text" id="fname" name="firstname" placeholder="Nguyễn Văn A">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="nva@example.com">
+                <label for="adr"><i class="fa fa-address-card"></i> Địa chỉ</label>
+                <input type="text" id="adr" name="address" placeholder="175 Tây Sơn">
+                <label for="state"><i class="fa fa-address-card"></i>Quận</label>
+                <input type="text" id="state" name="state" placeholder="Đống Đa">
+                
+                <div class="row1">
+                  <div class="col-50">
+                    <label for="city"><i class="fa fa-institution"></i> Thành phố</label>
+                    <input type="text" id="city" name="city" placeholder="Hà Nội">
+                  </div>
+                  <!-- <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div> -->
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Phương thức thanh toán</h3>
+                <br>
+                <label for="fname">Thẻ tín dụng</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Tên thẻ</label>
+                <input type="text" id="cname" name="cardname" placeholder="Nguyễn Văn A">
+                <label for="ccnum">Số thẻ tín dụng</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Tháng sản xuất</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <div class="row1">
+                  <div class="col-50">
+                    <label for="expyear">Năm sản xuất</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">Mã bảo mật</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label> -->
+            <input type="submit" value="Thanh toán hóa đơn" class="btn" onclick="popUp()">
+          </form>
+        </div>
+      </div>
+      <div class="col-25">
+        <div class="container1">
+          <form action="">
+            <h4>Giỏ hàng<span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">Sản phẩm 1</a> <span class="price">$15</span></p>
+            <p><a href="#">Sản phẩm 2</a> <span class="price">$5</span></p>
+            <p><a href="#">Sản phẩm 3</a> <span class="price">$8</span></p>
+            <p><a href="#">Sản phẩm 4</a> <span class="price">$2</span></p>
+            <hr>
+            <p>Tổng<span class="price" style="color:black"><b>$30</b></span></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="common-sec site-footer">
+      <div class="element-left">
+        <img src="assets/images/element9.png" alt="Element Image" />
+      </div>
+      <div class="element-right">
+        <img src="assets/images/element10.png" alt="Element Image" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-menu">
+              <h4 class="h4-title">Links</h4>
+              <ul>
+                <li><a href="offer.html">Giảm
+                    giá</a>
+                </li>
+                <li><a href="menu.html">Menu</a>
+                </li>
+                <li><a href="gallery.html">Thư
+                    viện</a>
+                </li>
+                <li><a href="team.html">Nhóm
+                    8</a></li>
+                <li><a href="contact.html">Liên
+                    hệ</a>
+                </li>
+                <li><a href="about-us.html">Giới
+                    thiệu</a>
+                </li>
+                <!-- <li><a href="blog.html">Blog</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0">
+            <div class="footer-contact">
+              <h4 class="h4-title">Thông tin liên hệ
+              </h4>
+              <p>
+                The old stables, braywood
+                house, drift road winkfield,
+                windsor, berkshire, Sl4 4rra
+              </p>
+              <p>
+                Tel:
+                <a href="javascript:void(0)" title="Call on 1900 6886">1900
+                  6886</a>
+              </p>
+              <a href="javascript:void(0)" title="Mail On Info@foodecart.com">Info@foodecart.com</a>
+              <div class="social-icon">
+                <a href="javascript:void(0)" title="Follow on Instagram"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+                <a href="javascript:void(0)" title="Follow on Facebook"><i class="fa fa-facebook-official"
+                    aria-hidden="true"></i></a>
+                <a href="javascript:void(0)" title="Follow on Twitter"><i class="fa fa-wechat"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="subscribe-form">
+              <h4 class="h4-title">Nhận thông báo</h4>
+              <form>
+                <div class="form-box">
+                  <span class="input-icon"><img src="assets/images/icon-mail.png" alt="Mail Icon" /></span>
+                  <input type="email" name="subscribe_email" placeholder="Địa chỉ email" class="form-input" required />
+                </div>
+                <div class="form-box">
+                  <button type="submit" id="send" class="sec-btn">
+                    <span>Đăng
+                      kí</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <!-- Scroll To Top Start -->
+            <a href="#main-banner" class="scroll-top" id="scroll-top"><span><i class="fa fa-angle-up"
+                  aria-hidden="true"></i></span></a>
+            <!-- Scroll To Top End -->
+            <!-- <div class="copy-right">
+                <p>
+                  Copyright © 2020
+                  <a href="index.html" title="FoodeCart">FoodeCart.</a> All
+                  rights reserved
+                </p>
+              </div> -->
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
+  <!-- Footer End -->
+  </div>
+
+  <!-- Jquery JS Link -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap JS Link -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Loader - TweenMax JS Link -->
+  <script src="assets/js/TweenMax.min.js"></script>
+
+  <!-- Date Picker JS Link -->
+  <script src="assets/js/moment.min.js"></script>
+  <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+  <!-- Slick Slider JS Link -->
+  <script src="assets/js/slick.min.js"></script>
+
+  <!-- Swiper Slider JS Link -->
+  <script src="assets/js/swiper.js"></script>
+
+  <!-- Wow Animation JS Link -->
+  <script src="assets/js/wow.min.js"></script>
+
+  <!-- Custom JS Link -->
+  <script src="assets/js/custom.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+      function popUp() {
+        window.alert("Thanh toán hóa đơn thành công")
+        window.location="http://127.0.0.1:5500/foodecart.com/foodecart-demo/Multiple_Pages/Homepage_2/index.html"
+      }
+  </script>
 </body>
+
+<!-- Mirrored from shivaaythemes.in/foodecart-demo/Multiple_Pages/Homepage_2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 14:41:56 GMT -->
+
 </html>

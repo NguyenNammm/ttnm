@@ -8,7 +8,7 @@ body {
           box-sizing: border-box;
         }
         
-        .row {
+        .row1 {
           display: -ms-flexbox; /* IE10 */
           display: flex;
           -ms-flex-wrap: wrap; /* IE10 */
@@ -37,14 +37,13 @@ body {
           padding: 0 16px;
         }
         
-        .container {
+        .container1 {
           background-color: #f2f2f2;
-          padding: 5px 20px 15px 20px;
           border: 1px solid lightgrey;
           border-radius: 3px;
         }
         
-        input[type=text] {
+        input1[type=text] {
           width: 100%;
           margin-bottom: 20px;
           padding: 12px;
@@ -52,18 +51,18 @@ body {
           border-radius: 3px;
         }
         
-        label {
+        label1 {
           margin-bottom: 10px;
           display: block;
         }
         
-        .icon-container {
+        .icon-container1 {
           margin-bottom: 20px;
           padding: 7px 0;
           font-size: 24px;
         }
         
-        .btn {
+        .btn1 {
           background-color: #04AA6D;
           color: white;
           padding: 12px;
@@ -75,19 +74,19 @@ body {
           font-size: 17px;
         }
         
-        .btn:hover {
+        .btn1:hover {
           background-color: #45a049;
         }
         
-        a {
+        .row1 a {
           color: #2196F3;
         }
         
-        hr {
+        .row1 hr {
           border: 1px solid lightgrey;
         }
         
-        span.price {
+        .row1 span.price {
           float: right;
           color: grey;
         }
