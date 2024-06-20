@@ -193,8 +193,17 @@
       </div>
     </section>
     <!-- Banner End -->
-
+    
     <!-- Menu List Start -->
+    <div class="row">
+      <div class="col-12">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Tìm kiếm đồ">
+          <button type="button" id="search-button">Tìm kiếm</button>
+      </div>
+      </div>
+   </div>
+    <div class=""></div>
     <div class="common-sec main-menu-list">
       <div class="element-left">
         <img src="assets/images/element1.png" alt="Element Image" />
@@ -1209,6 +1218,15 @@
 
     <!-- Custom JS Link -->
     <script src="assets/js/custom.js"></script>
+    <script>
+    const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+
+searchButton.addEventListener('click', function() {
+    let searchTerm = searchInput.value;
+    // Xử lý tìm kiếm dữ liệu dựa trên searchTerm
+});
+</script>
   </body>
 
   <!-- Mirrored from shivaaythemes.in/foodecart-demo/Multiple_Pages/Homepage_2/menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 14:42:04 GMT -->

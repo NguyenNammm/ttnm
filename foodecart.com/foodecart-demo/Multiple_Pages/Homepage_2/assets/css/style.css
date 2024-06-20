@@ -4554,3 +4554,28 @@ textarea.form-input2 {
 /*==========Responsive CSS End==========*/
 
 
+.search-bar {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Di chuyển thanh tìm kiếm xuống dưới 10px */
+    width: 100%; /* Điều chỉnh chiều rộng của thanh tìm kiếm theo phần trăm */
+}
+
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%; /* Điều chỉnh chiều rộng của input */
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #c7ac71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+}
